@@ -30,7 +30,7 @@ def get_restaurants(postcode):
 
 @app.route('/')
 def home():
-    postcode = 'EC4M7RF'  # Postcode with space
+    postcode = 'EC4M7RF'  # Postcode with no space
     raw_restaurants = get_restaurants(postcode)
 
     # Limit to 10 restaurants
